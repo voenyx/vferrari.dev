@@ -1,1 +1,45 @@
 @import './reset.css';
+
+body {
+  background-color: black;
+  padding-left: 20px;
+  padding-right: 20px;
+  max-width: 1440px;
+  margin: auto;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Roboto Mono', monospace;
+  color: white;
+}
+
+section,
+header,
+nav {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+a {
+  color: #20d2fb;
+  padding: 20px 10px;
+}
+
+a:hover {
+  color: #de31f7;
+}
+
+.jump-link {
+  display: block;
+  text-decoration: none;
+}
+
+.social-icon svg {
+  max-width: 30px;
+}

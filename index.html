@@ -1,17 +1,39 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Veronica Ferrari, Professional Web Developer</title>
+    <!-- metadata -->
+    <title>Veronica Ferrari, Web Developer</title>
+    <link rel="icon" type="image/svg+xml" href="./assets/logo.svg" />
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- main assets -->
+    <link href="./css/reset.css" rel="stylesheet" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link href="./css/main.css" rel="stylesheet" />
   </head>
   <body>
-    <header>
-      <div class="logo">
+    <header class="justify-items-between">
+      <div class="col-2 logo">
         <img
-          src="./assets/img/v-logo.svg"
-          alt="a gothic-stylized capital letter 'V' with a soft pink-to-blue color gradient"
+          src="./assets/logo.svg"
+          width="40"
+          height="40"
+          alt="gothic-stylized capital letter 'V' with a soft pink-to-blue color gradient"
         />
       </div>
-      <nav>
+      <nav class="col-10 justify-content-end">
         <a href="#home" class="jump-link">home</a>
         <a href="#projects" class="jump-link">projects</a>
         <a href="#about" class="jump-link">about</a>
@@ -27,7 +49,8 @@
         <p>
           My name is Veronica Ferrari, and I'm a web developer with over five
           years of experience working with large enterprise websites and
-          systems.
+          systems. My motivation as a developer is to create simple, flexible,
+          and easy-to-maintain solutions to solve complex problems.
         </p>
       </div>
     </section>
@@ -117,11 +140,46 @@
     </section>
   </body>
   <footer id="contact">
-    <a href="https://github.com/voenyx">
-      <img src="./assets/icons/github.svg" />
+    <a href="https://github.com/voenyx" class="social-icon">
+      <svg
+        version="1.1"
+        id="Layer_1"
+        xmlns="http://www.w3.org/2000/svg"
+        xmlns:xlink="http://www.w3.org/1999/xlink"
+        x="0px"
+        y="0px"
+        viewBox="0 0 25 25"
+        style="enable-background: new 0 0 25 25"
+        xml:space="preserve"
+      >
+        <path
+          d="M12.3,0.5C5.6,0.5,0.5,5.7,0.5,12.6c0,5.5,3.4,10.2,8.2,11.9c0.6,0.1,0.8-0.3,0.8-0.6c0-0.3,0-2,0-3c0,0-3.4,0.7-4.1-1.5
+	c0,0-0.6-1.4-1.3-1.8c0,0-1.1-0.8,0.1-0.8c0,0,1.2,0.1,1.9,1.3c1.1,1.9,2.8,1.4,3.5,1c0.1-0.8,0.4-1.3,0.8-1.7
+	c-2.7-0.3-5.4-0.7-5.4-5.5c0-1.4,0.4-2,1.1-2.9C5.9,8.7,5.5,7.4,6.2,5.6C7.2,5.3,9.5,7,9.5,7c1-0.3,2-0.4,3-0.4s2.1,0.1,3,0.4
+	c0,0,2.3-1.7,3.3-1.3c0.7,1.7,0.3,3,0.1,3.4c0.8,0.9,1.2,1.6,1.2,2.9c0,4.8-2.9,5.2-5.6,5.5c0.4,0.4,0.8,1.1,0.8,2.3
+	c0,1.7,0,3.7,0,4.1c0,0.3,0.2,0.7,0.8,0.6c4.8-1.6,8.1-6.4,8.1-11.9C24.5,5.7,19.1,0.5,12.3,0.5z"
+        />
+      </svg>
     </a>
-    <a href="www.linkedin.com/in/vnyx">
-      <img src="./assets/icons/linkedin.svg" />
+    <a href="www.linkedin.com/in/vnyx" class="social-icon">
+      <svg
+        version="1.1"
+        id="Layer_1"
+        xmlns="http://www.w3.org/2000/svg"
+        xmlns:xlink="http://www.w3.org/1999/xlink"
+        x="0px"
+        y="0px"
+        viewBox="0 0 25 25"
+        style="enable-background: new 0 0 25 25"
+        xml:space="preserve"
+      >
+        <path
+          d="M22.6,0.5h-20c-1.1,0-2.1,0.8-2.1,1.9v20.1c0,1.1,1,2.1,2.1,2.1h20c1.1,0,1.9-1,1.9-2.1V2.4C24.5,1.3,23.7,0.5,22.6,0.5z
+	 M7.9,20.5H4.5V9.8h3.4V20.5z M6.3,8.2L6.3,8.2c-1.1,0-1.8-0.8-1.8-1.8c0-1,0.7-1.8,1.9-1.8s1.8,0.8,1.8,1.8
+	C8.2,7.4,7.5,8.2,6.3,8.2L6.3,8.2z M20.5,20.5h-3.4v-5.8c0-1.4-0.5-2.4-1.7-2.4c-1,0-1.5,0.6-1.8,1.3c-0.1,0.2-0.1,0.5-0.1,0.8v6.1
+	H10V9.8h3.4v1.5c0.5-0.7,1.3-1.7,3.1-1.7c2.3,0,4,1.5,4,4.7L20.5,20.5z"
+        />
+      </svg>
     </a>
   </footer>
 </html>
