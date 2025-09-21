@@ -1,11 +1,9 @@
 @import './reset.css';
 
-body {
-  background-color: black;
-  padding-left: 20px;
-  padding-right: 20px;
-  max-width: 1440px;
-  margin: auto;
+html,
+body,
+header {
+  background-color: rgb(18, 18, 22);
 }
 
 p,
@@ -19,20 +17,63 @@ h6 {
   color: white;
 }
 
+h1 {
+  font-size: 4.5rem;
+}
+
+.text-gradient {
+  background: linear-gradient(179deg, #cb85ea, #a2d5fb);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
 section,
-header,
-nav {
+nav,
+.nav-menu {
   display: flex;
   flex-wrap: wrap;
 }
 
+header {
+  width: 100%;
+  padding: 10px 0;
+  position: fixed;
+  top: 0;
+  box-shadow: rgba(83, 37, 89, 0.08) 0px 8px 8px 0;
+}
+
+/* header,
+.content-wrapper {
+  background-color: rgb(18, 18, 22);
+} */
+
+nav,
+.content-wrapper {
+  padding: 0 40px;
+  max-width: 1300px;
+  margin: auto;
+}
+
+/* spacing */
+#home {
+  height: 100dvh;
+}
+
+/* text */
+
+/* links */
+
+.nav-menu a {
+  padding: 0 10px;
+}
+
 a {
-  color: #20d2fb;
-  padding: 20px 10px;
+  color: #73c0f9;
 }
 
 a:hover {
-  color: #de31f7;
+  color: #cb85ea;
 }
 
 .jump-link {
