@@ -1,36 +1,17 @@
 @import './reset.css';
 
+/* main */
+
 html,
 body,
 header {
   background-color: rgb(18, 18, 22);
 }
 
-p,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: 'Roboto Mono', monospace;
-  color: white;
-}
-
-h1 {
-  font-size: 4.5rem;
-}
-
-.text-gradient {
-  background: linear-gradient(179deg, #cb85ea, #a2d5fb);
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
-}
-
 section,
 nav,
-.nav-menu {
+.nav-menu,
+.project {
   display: flex;
   flex-wrap: wrap;
 }
@@ -43,11 +24,6 @@ header {
   box-shadow: rgba(83, 37, 89, 0.08) 0px 8px 8px 0;
 }
 
-/* header,
-.content-wrapper {
-  background-color: rgb(18, 18, 22);
-} */
-
 nav,
 .content-wrapper {
   padding: 0 40px;
@@ -55,12 +31,71 @@ nav,
   margin: auto;
 }
 
-/* spacing */
 #home {
   height: 100dvh;
 }
 
+.project {
+  padding: 60px 0;
+  align-items: center;
+}
+
+.project img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  border-radius: 100%;
+}
+
+.project:nth-child(even) .img-container {
+  order: 2;
+}
+
+.project:nth-child(even) .txt-container {
+  order: 1;
+}
+
 /* text */
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Roboto Mono', monospace;
+  color: white;
+}
+
+h1,
+h2,
+h3 {
+  background: linear-gradient(179deg, #cb85ea, #a2d5fb);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+h1 {
+  font-size: 5.5rem;
+  margin-left: -4px;
+}
+
+h2 {
+  font-size: 4.5rem;
+}
+
+h3 {
+  font-size: 3.5rem;
+}
+
+.text-gradient {
+  background: linear-gradient(179deg, #cb85ea, #a2d5fb);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
 
 /* links */
 
