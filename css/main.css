@@ -5,13 +5,15 @@
 html,
 body,
 header {
-  background-color: rgb(18, 18, 22);
+  background-color: #020202;
 }
 
 section,
 nav,
+footer,
 .nav-menu,
-.project {
+.project,
+.social-icons {
   display: flex;
   flex-wrap: wrap;
 }
@@ -25,6 +27,7 @@ header {
 }
 
 nav,
+footer,
 .content-wrapper {
   padding: 0 40px;
   max-width: 1300px;
@@ -87,7 +90,7 @@ h2 {
 }
 
 h3 {
-  font-size: 3.5rem;
+  font-size: 2.5rem;
 }
 
 .text-gradient {
@@ -104,11 +107,11 @@ h3 {
 }
 
 a {
-  color: #73c0f9;
+  color: #a9c7f8;
 }
 
 a:hover {
-  color: #cb85ea;
+  color: #d779ea;
 }
 
 .jump-link {
@@ -116,6 +119,11 @@ a:hover {
   text-decoration: none;
 }
 
-.social-icon svg {
-  max-width: 30px;
+.social-icon {
+  padding: 0 20px;
+}
+
+.social-icon a {
+  width: 50px;
+  height: 50px;
 }
