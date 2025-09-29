@@ -1,0 +1,16 @@
+:root {
+  --logo-pink: #cb85ea;
+  --logo-blue: #a2d5fb;
+  /* --pink-reverse: #cb85ea; */
+  --blue-reverse: #fbc8a2;
+  --link-color: var(--logo-blue);
+  --link-hover: var(--logo-pink);
+  /* --link-color: #a9c7f8;
+  --link-hover: #d779ea; */
+  --gradient: linear-gradient(150deg, var(--logo-pink), var(--logo-blue));
+  --gradient-reverse: linear-gradient(
+    330deg,
+    var(--logo-pink),
+    var(--blue-reverse)
+  );
+}
